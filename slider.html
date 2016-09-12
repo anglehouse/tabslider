@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+	<title>tab</title>
+	<script>
+		var deviceWidth = Math.min(750,document.documentElement.clientWidth);
+		document.documentElement.style.fontSize = deviceWidth/7.5+"px";
+	</script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/h5.css">
+	<link rel="stylesheet" href="css/shipin.css">
+	<link rel="stylesheet" href="css/findGame.css">
+	<style>
+	.tab-box{
+		overflow-x:scroll;
+		width:100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+	.tab-box::-webkit-scrollbar {
+		visibility: hidden;
+		height:0;
+	}
+	.tab-bar {
+		width:auto;
+		height: 0.8rem;
+		font-size: 0;
+		white-space: nowrap;
+		overflow-x:scroll;
+	}
+	.tab-bar span {
+		height: 2px;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform:translate3d(0,0,0);
+		-webkit-transition-duration: 0.1s;
+		-webkit-transition-timing-function: linear;
+		transform: translate3d(0,0,0);
+		transition-duration: 0.1s;
+		transition-timing-function: linear;  
+		background: red;
+	} 
+	.tab-bar a {
+		display:inline-block;
+		padding:0 10px;
+		font-size: 14px;
+		text-align: center;
+		text-decoration: none;
+		height:0.8rem;
+		line-height:0.8rem;
+		color: #000;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
+	.view-box {
+		width:100%; 
+		height: 100%;
+		overflow:hidden;
+		position: fixed;
+		left: 0;
+		top:0.8rem;
+	}
+	.viewport {
+		height: 100%;
+		display: -webkit-box;    
+		overflow: hidden;
+		-webkit-transform: translate3d(0,0,0);
+	}
+	.pageview {
+		width:7.5rem;
+		padding-bottom:0.8rem;
+		overflow-y:scroll;
+		-webkit-overflow-scrolling:touch;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="tab-box">
+		<div class="tab-bar">
+			<a href="javascript:;">我的vip会员</a>
+			<a href="javascript:;">会员俱乐部</a>
+			<a href="javascript:;">vip电影</a>
+			<a href="javascript:;">vip纪录片</a>
+			<a href="javascript:;">vip黄金套餐</a>
+			<span style="width:auto;"></span>
+		</div>		
+	</div>
+	<div class="view-box">
+		<div id="viewport" class="viewport">    
+			<div class="pageview">  
+				<div class="page-area-1">
+					<div class="container">
+					    <div class="gameitem">
+					        <a href="/h5/10222.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/15ebf571c40dfb5e5f6137f8661f4f18.jpg" alt="开心消消乐H5" name="开心消消乐H5">
+					            <div class="gametxt">
+					                <h3>开心消消乐H5</h3>
+					                <span>休闲类</span>
+					                <div>683人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10222.html">去玩</a>
+					    </div>
+					        <div class="gameitem">
+					        <a href="/h5/10221.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/884615b7a4ba06fe335e237ffe42f0c9.jpg" alt="忍者猪的修行" name="忍者猪的修行">
+					            <div class="gametxt">
+					                <h3>忍者猪的修行</h3>
+					                <span>休闲类</span>
+					                <div>658人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10221.html">去玩</a>
+					    </div>
+					        <div class="gameitem">
+					        <a href="/h5/10220.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/9cd7dbce60282e0c439c7e560b1ef2ba.jpg" alt="反叛的拇指" name="反叛的拇指">
+					            <div class="gametxt">
+					                <h3>反叛的拇指</h3>
+					                <span>休闲类</span>
+					                <div>698人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10220.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10219.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/470ab310a0f48f50c556d833211750fa.jpg" alt="拆散专家" name="拆散专家">
+					            <div class="gametxt">
+					                <h3>拆散专家</h3>
+					                <span>休闲类</span>
+					                <div>689人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10219.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10218.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/d331d739c3eedc3fe53c9e585528638a.jpg" alt="马踏棋盘" name="马踏棋盘">
+					            <div class="gametxt">
+					                <h3>马踏棋盘</h3>
+					                <span>休闲类</span>
+					                <div>915人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10218.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10217.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/53b8ce9ea920a1145a9345eda5d6bf83.jpg" alt="万圣节的伐木" name="万圣节的伐木">
+					            <div class="gametxt">
+					                <h3>万圣节的伐木</h3>
+					                <span>休闲类</span>
+					                <div>702人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10217.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10216.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/4d98fa23798b8d79ba34f4dd0d987023.jpg" alt="腐尸台球厅" name="腐尸台球厅">
+					            <div class="gametxt">
+					                <h3>腐尸台球厅</h3>
+					                <span>休闲类</span>
+					                <div>653人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10216.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10215.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/47e3b14447f14368c0ec5b57dd1e18ef.jpg" alt="时空游侠" name="时空游侠">
+					            <div class="gametxt">
+					                <h3>时空游侠</h3>
+					                <span>休闲类</span>
+					                <div>660人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10215.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10214.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/844592467ffd597be00f9b0a5f76da38.jpg" alt="水果记忆力" name="水果记忆力">
+					            <div class="gametxt">
+					                <h3>水果记忆力</h3>
+					                <span>休闲类</span>
+					                <div>696人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10214.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10213.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/5ac3d2c33d253c7babfe87bb15138fb6.jpg" alt="转你妹" name="转你妹">
+					            <div class="gametxt">
+					                <h3>转你妹</h3>
+					                <span>休闲类</span>
+					                <div>744人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10213.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10212.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/d4c2b26faf9b0a7e3e35a4a45016e905.jpg" alt="能打多少次" name="能打多少次">
+					            <div class="gametxt">
+					                <h3>能打多少次</h3>
+					                <span>休闲类</span>
+					                <div>635人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10212.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10211.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/1ecb26e01c1c721bec52f76dd641ed29.jpg" alt="小呀小苹果" name="小呀小苹果">
+					            <div class="gametxt">
+					                <h3>小呀小苹果</h3>
+					                <span>休闲类</span>
+					                <div>674人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10211.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10210.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/140e1b5cdf141c74cca480ede6a3df07.jpg" alt="果蔬达人" name="果蔬达人">
+					            <div class="gametxt">
+					                <h3>果蔬达人</h3>
+					                <span>休闲类</span>
+					                <div>613人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10210.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10209.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/be1ac450e6386af10cfef89842327b67.jpg" alt="十滴水" name="十滴水">
+					            <div class="gametxt">
+					                <h3>十滴水</h3>
+					                <span>休闲类</span>
+					                <div>697人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10209.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10208.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/f90b4c6b73556e8a681882879e1924a0.jpg" alt="连连小方块" name="连连小方块">
+					            <div class="gametxt">
+					                <h3>连连小方块</h3>
+					                <span>休闲类</span>
+					                <div>669人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10208.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10207.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/b0332ef2947333289789c7b701b083d3.png" alt="萌萌果冻" name="萌萌果冻">
+					            <div class="gametxt">
+					                <h3>萌萌果冻</h3>
+					                <span>休闲类</span>
+					                <div>442人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10207.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10206.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/f8e3ffda5e211c678fe11181cc3268dd.png" alt="农场入侵者" name="农场入侵者">
+					            <div class="gametxt">
+					                <h3>农场入侵者</h3>
+					                <span>休闲类</span>
+					                <div>475人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10206.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10205.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/ab1c0a1aca5d3c4077d63a91964eb48e.png" alt="智力打弹珠" name="智力打弹珠">
+					            <div class="gametxt">
+					                <h3>智力打弹珠</h3>
+					                <span>休闲类</span>
+					                <div>470人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10205.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10204.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/4cec62a4876fc4384d7fcd8b0b1d9571.png" alt="法老陵石" name="法老陵石">
+					            <div class="gametxt">
+					                <h3>法老陵石</h3>
+					                <span>休闲类</span>
+					                <div>413人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10204.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10203.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/c79e99f73a51537de8cfaeac7e7b7202.png" alt="七彩宝石" name="七彩宝石">
+					            <div class="gametxt">
+					                <h3>七彩宝石</h3>
+					                <span>休闲类</span>
+					                <div>426人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10203.html">去玩</a>
+					    </div>    
+					    <div class="loadmore">
+					        <!--<i class="icon iconfont">&#xe603;</i>-->
+					        <span>点击加载按钮</span>
+					    </div>
+					</div>				
+				</div>
+			</div>    
+			<div class="pageview">    
+				<div class="page-area-2">
+					<div class="container">
+						<a href="/shipin/14207.html" class="shipin-item">
+							<h3>《银河掠夺者》首部宣传片</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/06/08ecbd7dfb01cf4bc520136cdcc4d473.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-06 15:02:01</span>
+							</p>
+						</a>
+						<a href="/shipin/14204.html" class="shipin-item">
+							<h3>【散人】大型励志剧娱乐圈小助理养成计划</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/06/3b087b158ca4fee8d7df67f0881ce0fe.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-06 13:24:29</span>
+							</p>
+						</a>
+						<a href="/shipin/14164.html" class="shipin-item">
+							<h3>大型励志剧娱乐圈小助理养成计划（更新至P17拍摄场惊魂夜）_3</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/05/6119458b63c047578d79ea4e18d7ae9f.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-05 16:11:56</span>
+							</p>
+						</a>
+						<a href="/shipin/14082.html" class="shipin-item">
+							<h3>神级还原某主播被狮子狗跳哭</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/98b5560f7984096a33e8795834fad5e0.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 15:03:11</span>
+							</p>
+						</a>
+						<a href="/shipin/14081.html" class="shipin-item">
+							<h3>主播炸了！还敢不敢装逼了 55开放话怒剪光</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/910bd015ffbc67bbdc2feaf9ba890b44.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 15:01:19</span>
+							</p>
+						</a>
+						<a href="/shipin/14080.html" class="shipin-item">
+							<h3>PDD猛男背心GAY到不行 国服第一躺赢女锤</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/56707fc7f49fc0d1f73d69013183680f.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:58:52</span>
+							</p>
+						</a>
+						<a href="/shipin/14078.html" class="shipin-item">
+							<h3>蛤蟆也能抓哭女主播</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/d3ef62ce432216aeeab169b17a0f8f3e.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:55:24</span>
+							</p>
+						</a>
+						<a href="/shipin/14077.html" class="shipin-item">
+							<h3>穿越火线手游小钧和小智生化解说</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/dc1059f0a01759659b9ef539781ac068.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:53:20</span>
+							</p>
+						</a>
+						<a href="/shipin/14076.html" class="shipin-item">
+							<h3>穿越火线手游小钧实况解说（预告片）</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/220c78b7aff86e098a12bac1ee374a30.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:50:09</span>
+							</p>
+						</a>
+						<a href="/shipin/14075.html" class="shipin-item">
+							<h3>《我们的传奇》三英雄技能视频首曝</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/ac7bcbe82ecbd6e509b0ea3e1fe5d5b3.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 13:26:44</span>
+							</p>
+						</a>
+						<a href="/shipin/14074.html" class="shipin-item">
+							<h3>战旗精彩TOP5 VOL23 昔日上单霸主再现雄风！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/fb7f09643175916d01a55b072a125b9c.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:49:33</span>
+							</p>
+						</a>
+						<a href="/shipin/14073.html" class="shipin-item">
+							<h3>战旗精彩TOP5 VOL24 杂技耍的好靠的是走位！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/214d7ea002f91176eb0b7839d2a17153.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:47:12</span>
+							</p>
+						</a>
+						<a href="/shipin/14072.html" class="shipin-item">
+							<h3>《守望先锋》新动画</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/bf911b617f7809f498c6c827684e4b0d.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:44:47</span>
+							</p>
+						</a>
+						<a href="/shipin/14071.html" class="shipin-item">
+							<h3>午夜绅士熊的老脸play！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/15d43a10a58546d2feb2ffcddcf13c42.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:43:03</span>
+							</p>
+						</a>
+						<a href="/shipin/14070.html" class="shipin-item">
+							<h3>《使命召唤13》完整预告+《现代战争》</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/77871651554f15c7ef296660a9244349.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:41:32</span>
+							</p>
+						</a>
+						<a href="/shipin/14069.html" class="shipin-item">
+							<h3>《LOL》新英雄塔莉垭宣传片</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/0f864ad80016575c687bc91e8f2feef1.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:38:10</span>
+							</p>
+						</a>
+						<a href="/shipin/14068.html" class="shipin-item">
+							<h3>剑圣易大师的故事</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/fe9a3e5b8f8001ea618d2b91d40b2e59.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:35:43</span>
+							</p>
+						</a>
+						<a href="/shipin/14067.html" class="shipin-item">
+							<h3>亚索 亚家剑传奇 我要成为装逼王</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/049a6caa2bad24259db60894f164a0ad.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:33:42</span>
+							</p>
+						</a>
+						<a href="/shipin/14066.html" class="shipin-item">
+							<h3>劫的故事 丝血反杀背后的孤独</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/8e4b57f9d7bf88fd0dd6a25b6ebc56b3.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:31:53</span>
+							</p>
+						</a>
+						<a href="/shipin/14065.html" class="shipin-item">
+							<h3>梦想信仰缺一不可：努力努力在努力 希望的曙光就在前方</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/74011f38cc97667be958799867ddc1e1.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:30:05</span>
+							</p>
+						</a>
+					</div>				
+				</div>
+			</div>    
+			<div class="pageview">    
+				<div class="page-area-3">
+					<div class="container">
+						<h5 class="sort-title">游戏类型</h5>
+		        		<div class="findgame-cate-list pt-0">
+							<a href="/game/1_0_0/" class="findgame-column">
+								<img src="images/1.png" alt="休闲益智">
+								<div>
+									<h4>休闲益智</h4>
+									<p>地铁与公交不二的选择</p>
+									<small>11722款游戏</small>
+								</div>
+							</a>
+							<div class="sort-comment">
+		                        <a href="/game/1_101_0/">休闲</a>
+		                        <a href="/game/1_102_0/">消除</a>
+		                        <a href="/game/1_103_0/">捕鱼</a>
+		                        <a href="/game/1_104_0/">音乐</a>
+		                        <a href="/game/1_105_0/">物理</a>
+		                        <a href="/game/1_106_0/">解谜</a>
+		                        <a href="/game/1_107_0/">教育</a>
+		                        <a href="/game/1_108_0/">交友</a>
+		                	</div>
+	        			</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/2_0_0/" class="findgame-column">
+							<img src="images/2.png" alt="动作跑酷">
+							<div>
+								<h4>动作跑酷</h4>
+								<p>奔跑吧，少年</p>
+								<small>13060款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/2_201_0/">跑酷</a>
+	                        <a href="/game/2_202_0/">横版</a>
+	                        <a href="/game/2_203_0/">格斗</a>
+	                        <a href="/game/2_204_0/">冒险</a>
+	                        <a href="/game/2_205_0/">躲避</a>
+	                        <a href="/game/2_206_0/">跳跃</a>
+	                        <a href="/game/2_207_0/">对战</a>
+	    				</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/3_0_0/" class="findgame-column">
+							<img src="images/3.png" alt="卡牌游戏">
+							<div>
+								<h4>卡牌游戏</h4>
+								<p>千王之王,非你莫属</p>
+								<small>12810款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/3_301_0/">武侠</a>
+	                        <a href="/game/3_302_0/">日系</a>
+	                        <a href="/game/3_303_0/">动漫</a>
+	                        <a href="/game/3_304_0/">体育</a>
+	                        <a href="/game/3_305_0/">三国</a>
+	                        <a href="/game/3_306_0/">Q版</a>
+	        			</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/4_0_0/" class="findgame-column">
+							<img src="images/4.png" alt="网络游戏">
+							<div>
+								<h4>网络游戏</h4>
+								<p>兄弟们，走！打怪去!</p>
+								<small>14408款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/4_401_0/">卡牌</a>
+	                        <a href="/game/4_402_0/">策略</a>
+	                        <a href="/game/4_403_0/">角色</a>
+	                        <a href="/game/4_404_0/">动作</a>
+	                        <a href="/game/4_405_0/">三国</a>
+	                        <a href="/game/4_406_0/">经营</a>
+	                        <a href="/game/4_407_0/">仙侠</a>
+	                	</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/5_0_0/" class="findgame-column">
+							<img src="images/5.png" alt="棋牌天地">
+							<div>
+								<h4>棋牌天地</h4>
+								<p>一部手机就够了</p>
+								<small>12952款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/5_501_0/">单机</a>
+	                        <a href="/game/5_502_0/">赢话费</a>
+	                        <a href="/game/5_503_0/">斗地主</a>
+	                        <a href="/game/5_504_0/">棋类</a>
+	                        <a href="/game/5_505_0/">麻将</a>
+	                        <a href="/game/5_506_0/">德州扑克</a>
+	                        <a href="/game/5_507_0/">斗牛</a>
+	        			</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/6_0_0/" class="findgame-column">
+							<img src="images/6.png" alt="经营策略">
+							<div>
+								<h4>经营策略</h4>
+								<p>脑动大开，谁与争锋</p>
+								<small>14107款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/6_601_0/">经营</a>
+	                        <a href="/game/6_602_0/">塔防</a>
+	                        <a href="/game/6_603_0/">战争</a>
+	                        <a href="/game/6_604_0/">策略</a>
+	                        <a href="/game/6_605_0/">三国</a>
+	                        <a href="/game/6_606_0/">养成</a>
+	                        <a href="/game/6_607_0/">防守</a>
+	                        <a href="/game/6_608_0/">开罗</a>
+	            		</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/7_0_0/" class="findgame-column">
+							<img src="images/7.png" alt="飞行射击">
+							<div>
+								<h4>飞行射击</h4>
+								<p>飞得不要不要的</p>
+								<small>13240款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/7_701_0/">太空</a>
+	                        <a href="/game/7_702_0/">飞机</a>
+	                        <a href="/game/7_703_0/">狙击</a>
+	                        <a href="/game/7_704_0/">坦克</a>
+	                        <a href="/game/7_705_0/">战争</a>
+	                        <a href="/game/7_706_0/">射击</a>
+	                        <a href="/game/7_707_0/">直升机</a>
+	                	</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/8_0_0/" class="findgame-column">
+							<img src="images/8.png" alt="角色扮演">
+							<div>
+								<h4>角色扮演</h4>
+								<p>想变身！？来这吧</p>
+								<small>14664款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/8_801_0/">奇幻</a>
+	                        <a href="/game/8_802_0/">神魔</a>
+	                        <a href="/game/8_803_0/">历史</a>
+	                        <a href="/game/8_804_0/">武侠</a>
+	                        <a href="/game/8_805_0/">仙侠</a>
+	                        <a href="/game/8_806_0/">回合制</a>
+	                        <a href="/game/8_807_0/">即时</a>
+	                        <a href="/game/8_808_0/">动作</a>
+	                        <a href="/game/8_809_0/">Q版</a>
+		    			</div>
+					</div>
+					<div class="findgame-cate-list ">
+						<a href="/game/9_0_0/" class="findgame-column">
+							<img src="images/9.png" alt="体育竞技">
+							<div>
+								<h4>体育竞技</h4>
+								<p>论冠军是怎么练成的</p>
+								<small>13143款游戏</small>
+							</div>
+						</a>
+						<div class="sort-comment">
+	                        <a href="/game/9_901_0/">赛车</a>
+	                        <a href="/game/9_902_0/">摩托</a>
+	                        <a href="/game/9_903_0/">足球</a>
+	                        <a href="/game/9_904_0/">篮球</a>
+	                        <a href="/game/9_905_0/">台球</a>
+	                        <a href="/game/9_906_0/">极限</a>
+	                        <a href="/game/9_907_0/">运动</a>
+	                	</div>
+					</div>				
+				</div>
+			</div>    
+			<div class="pageview">  
+				<div class="page-area-4">
+					<div class="container">
+					    <div class="gameitem">
+					        <a href="/h5/10222.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/15ebf571c40dfb5e5f6137f8661f4f18.jpg" alt="开心消消乐H5" name="开心消消乐H5">
+					            <div class="gametxt">
+					                <h3>开心消消乐H5</h3>
+					                <span>休闲类</span>
+					                <div>683人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10222.html">去玩</a>
+					    </div>
+					        <div class="gameitem">
+					        <a href="/h5/10221.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/884615b7a4ba06fe335e237ffe42f0c9.jpg" alt="忍者猪的修行" name="忍者猪的修行">
+					            <div class="gametxt">
+					                <h3>忍者猪的修行</h3>
+					                <span>休闲类</span>
+					                <div>658人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10221.html">去玩</a>
+					    </div>
+					        <div class="gameitem">
+					        <a href="/h5/10220.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/9cd7dbce60282e0c439c7e560b1ef2ba.jpg" alt="反叛的拇指" name="反叛的拇指">
+					            <div class="gametxt">
+					                <h3>反叛的拇指</h3>
+					                <span>休闲类</span>
+					                <div>698人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10220.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10219.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/470ab310a0f48f50c556d833211750fa.jpg" alt="拆散专家" name="拆散专家">
+					            <div class="gametxt">
+					                <h3>拆散专家</h3>
+					                <span>休闲类</span>
+					                <div>689人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10219.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10218.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/30/d331d739c3eedc3fe53c9e585528638a.jpg" alt="马踏棋盘" name="马踏棋盘">
+					            <div class="gametxt">
+					                <h3>马踏棋盘</h3>
+					                <span>休闲类</span>
+					                <div>915人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10218.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10217.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/53b8ce9ea920a1145a9345eda5d6bf83.jpg" alt="万圣节的伐木" name="万圣节的伐木">
+					            <div class="gametxt">
+					                <h3>万圣节的伐木</h3>
+					                <span>休闲类</span>
+					                <div>702人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10217.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10216.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/4d98fa23798b8d79ba34f4dd0d987023.jpg" alt="腐尸台球厅" name="腐尸台球厅">
+					            <div class="gametxt">
+					                <h3>腐尸台球厅</h3>
+					                <span>休闲类</span>
+					                <div>653人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10216.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10215.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/47e3b14447f14368c0ec5b57dd1e18ef.jpg" alt="时空游侠" name="时空游侠">
+					            <div class="gametxt">
+					                <h3>时空游侠</h3>
+					                <span>休闲类</span>
+					                <div>660人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10215.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10214.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/844592467ffd597be00f9b0a5f76da38.jpg" alt="水果记忆力" name="水果记忆力">
+					            <div class="gametxt">
+					                <h3>水果记忆力</h3>
+					                <span>休闲类</span>
+					                <div>696人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10214.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10213.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/5ac3d2c33d253c7babfe87bb15138fb6.jpg" alt="转你妹" name="转你妹">
+					            <div class="gametxt">
+					                <h3>转你妹</h3>
+					                <span>休闲类</span>
+					                <div>744人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10213.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10212.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/d4c2b26faf9b0a7e3e35a4a45016e905.jpg" alt="能打多少次" name="能打多少次">
+					            <div class="gametxt">
+					                <h3>能打多少次</h3>
+					                <span>休闲类</span>
+					                <div>635人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10212.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10211.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/1ecb26e01c1c721bec52f76dd641ed29.jpg" alt="小呀小苹果" name="小呀小苹果">
+					            <div class="gametxt">
+					                <h3>小呀小苹果</h3>
+					                <span>休闲类</span>
+					                <div>674人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10211.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10210.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/140e1b5cdf141c74cca480ede6a3df07.jpg" alt="果蔬达人" name="果蔬达人">
+					            <div class="gametxt">
+					                <h3>果蔬达人</h3>
+					                <span>休闲类</span>
+					                <div>613人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10210.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10209.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/be1ac450e6386af10cfef89842327b67.jpg" alt="十滴水" name="十滴水">
+					            <div class="gametxt">
+					                <h3>十滴水</h3>
+					                <span>休闲类</span>
+					                <div>697人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10209.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10208.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/f90b4c6b73556e8a681882879e1924a0.jpg" alt="连连小方块" name="连连小方块">
+					            <div class="gametxt">
+					                <h3>连连小方块</h3>
+					                <span>休闲类</span>
+					                <div>669人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10208.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10207.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/b0332ef2947333289789c7b701b083d3.png" alt="萌萌果冻" name="萌萌果冻">
+					            <div class="gametxt">
+					                <h3>萌萌果冻</h3>
+					                <span>休闲类</span>
+					                <div>442人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10207.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10206.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/f8e3ffda5e211c678fe11181cc3268dd.png" alt="农场入侵者" name="农场入侵者">
+					            <div class="gametxt">
+					                <h3>农场入侵者</h3>
+					                <span>休闲类</span>
+					                <div>475人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10206.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10205.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/ab1c0a1aca5d3c4077d63a91964eb48e.png" alt="智力打弹珠" name="智力打弹珠">
+					            <div class="gametxt">
+					                <h3>智力打弹珠</h3>
+					                <span>休闲类</span>
+					                <div>470人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10205.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10204.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/4cec62a4876fc4384d7fcd8b0b1d9571.png" alt="法老陵石" name="法老陵石">
+					            <div class="gametxt">
+					                <h3>法老陵石</h3>
+					                <span>休闲类</span>
+					                <div>413人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10204.html">去玩</a>
+					    </div>
+				        <div class="gameitem">
+					        <a href="/h5/10203.html" class="nlist">
+					            <img src="http://img.storage.17wanba.org.cn/game/2015/12/29/c79e99f73a51537de8cfaeac7e7b7202.png" alt="七彩宝石" name="七彩宝石">
+					            <div class="gametxt">
+					                <h3>七彩宝石</h3>
+					                <span>休闲类</span>
+					                <div>426人玩过</div>
+					            </div>
+					        </a>
+					        <a class="game-download" href="/h5/10203.html">去玩</a>
+					    </div>    
+					    <div class="loadmore">
+					        <!--<i class="icon iconfont">&#xe603;</i>-->
+					        <span>点击加载按钮</span>
+					    </div>
+					</div>				
+				</div>
+			</div>    
+			<div class="pageview">    
+				<div class="page-area-5">
+					<div class="container">
+						<a href="/shipin/14207.html" class="shipin-item">
+							<h3>《银河掠夺者》首部宣传片</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/06/08ecbd7dfb01cf4bc520136cdcc4d473.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-06 15:02:01</span>
+							</p>
+						</a>
+						<a href="/shipin/14204.html" class="shipin-item">
+							<h3>【散人】大型励志剧娱乐圈小助理养成计划</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/06/3b087b158ca4fee8d7df67f0881ce0fe.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-06 13:24:29</span>
+							</p>
+						</a>
+						<a href="/shipin/14164.html" class="shipin-item">
+							<h3>大型励志剧娱乐圈小助理养成计划（更新至P17拍摄场惊魂夜）_3</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/05/6119458b63c047578d79ea4e18d7ae9f.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-05 16:11:56</span>
+							</p>
+						</a>
+						<a href="/shipin/14082.html" class="shipin-item">
+							<h3>神级还原某主播被狮子狗跳哭</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/98b5560f7984096a33e8795834fad5e0.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 15:03:11</span>
+							</p>
+						</a>
+						<a href="/shipin/14081.html" class="shipin-item">
+							<h3>主播炸了！还敢不敢装逼了 55开放话怒剪光</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/910bd015ffbc67bbdc2feaf9ba890b44.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 15:01:19</span>
+							</p>
+						</a>
+						<a href="/shipin/14080.html" class="shipin-item">
+							<h3>PDD猛男背心GAY到不行 国服第一躺赢女锤</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/56707fc7f49fc0d1f73d69013183680f.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:58:52</span>
+							</p>
+						</a>
+						<a href="/shipin/14078.html" class="shipin-item">
+							<h3>蛤蟆也能抓哭女主播</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/d3ef62ce432216aeeab169b17a0f8f3e.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:55:24</span>
+							</p>
+						</a>
+						<a href="/shipin/14077.html" class="shipin-item">
+							<h3>穿越火线手游小钧和小智生化解说</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/dc1059f0a01759659b9ef539781ac068.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:53:20</span>
+							</p>
+						</a>
+						<a href="/shipin/14076.html" class="shipin-item">
+							<h3>穿越火线手游小钧实况解说（预告片）</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/220c78b7aff86e098a12bac1ee374a30.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 14:50:09</span>
+							</p>
+						</a>
+						<a href="/shipin/14075.html" class="shipin-item">
+							<h3>《我们的传奇》三英雄技能视频首曝</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/04/ac7bcbe82ecbd6e509b0ea3e1fe5d5b3.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-04 13:26:44</span>
+							</p>
+						</a>
+						<a href="/shipin/14074.html" class="shipin-item">
+							<h3>战旗精彩TOP5 VOL23 昔日上单霸主再现雄风！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/fb7f09643175916d01a55b072a125b9c.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:49:33</span>
+							</p>
+						</a>
+						<a href="/shipin/14073.html" class="shipin-item">
+							<h3>战旗精彩TOP5 VOL24 杂技耍的好靠的是走位！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/214d7ea002f91176eb0b7839d2a17153.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:47:12</span>
+							</p>
+						</a>
+						<a href="/shipin/14072.html" class="shipin-item">
+							<h3>《守望先锋》新动画</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/bf911b617f7809f498c6c827684e4b0d.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:44:47</span>
+							</p>
+						</a>
+						<a href="/shipin/14071.html" class="shipin-item">
+							<h3>午夜绅士熊的老脸play！</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/15d43a10a58546d2feb2ffcddcf13c42.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:43:03</span>
+							</p>
+						</a>
+						<a href="/shipin/14070.html" class="shipin-item">
+							<h3>《使命召唤13》完整预告+《现代战争》</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/77871651554f15c7ef296660a9244349.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:41:32</span>
+							</p>
+						</a>
+						<a href="/shipin/14069.html" class="shipin-item">
+							<h3>《LOL》新英雄塔莉垭宣传片</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/0f864ad80016575c687bc91e8f2feef1.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:38:10</span>
+							</p>
+						</a>
+						<a href="/shipin/14068.html" class="shipin-item">
+							<h3>剑圣易大师的故事</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/fe9a3e5b8f8001ea618d2b91d40b2e59.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:35:43</span>
+							</p>
+						</a>
+						<a href="/shipin/14067.html" class="shipin-item">
+							<h3>亚索 亚家剑传奇 我要成为装逼王</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/049a6caa2bad24259db60894f164a0ad.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:33:42</span>
+							</p>
+						</a>
+						<a href="/shipin/14066.html" class="shipin-item">
+							<h3>劫的故事 丝血反杀背后的孤独</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/8e4b57f9d7bf88fd0dd6a25b6ebc56b3.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:31:53</span>
+							</p>
+						</a>
+						<a href="/shipin/14065.html" class="shipin-item">
+							<h3>梦想信仰缺一不可：努力努力在努力 希望的曙光就在前方</h3>
+							<div>
+								<img src="http://img.storage.17wanba.org.cn/game/2016/05/03/74011f38cc97667be958799867ddc1e1.jpg" alt="">
+							</div>
+							<p>
+								<span>更新时间：2016-05-03 16:30:05</span>
+							</p>
+						</a>
+					</div>				
+				</div>
+			</div>  
+		</div> 		
+	</div> 
+<script>
+window.onload = function (){
+	function parentsUntil(selector, name) {
+	    if (!selector.parentNode || !document.querySelectorAll(name)[0]) return;
+	    var pn = selector.parentNode;
+	    if (name.slice(0, 1) === "." && pn.nodeType === 1) {
+	        var test = new RegExp(name.slice(1), "g");
+	        try {
+	            while (!pn.className.match(test)) {
+	                pn = pn.parentNode;
+	            }
+	        } catch (e) {
+	            return;
+	        }
+	        return pn;
+	    } else if (name.slice(0, 1) === "#") {
+	        var test = new RegExp(name.slice(1), "g");
+	        try {
+	            while (!pn.id.match(test)) {
+	                pn = pn.parentNode;
+	            }
+	        } catch (e) {
+	            return;
+	        }
+	        return pn;
+	    } else {
+	        var test = new RegExp(name, "i");
+	        try {
+	            while (!pn.tagName.match(test)) {
+	                pn = pn.parentNode;
+	            }
+	        } catch (e) {
+	            return;
+	        }
+	    }
+	    return pn;
+	};
+	function view() {
+		return {
+			w: document.documentElement.clientWidth || window.innerWidth,
+			h: document.documentElement.clientHeight|| window.innerHeight
+		};
+	}
+	var viewport = document.querySelector('.viewport');
+	var pageview = Array.prototype.slice.call(document.querySelectorAll('.pageview'));
+	var icon = Array.prototype.slice.call(document.querySelectorAll('.tab-bar a'));
+	var tarbar = document.querySelector('.tab-bar');
+	var tarbox = document.querySelector('.tab-box');
+	var line = document.querySelector('.tab-bar span');
+	var tabbox = document.querySelector(".tab-box");
+	var iconLen = icon.length; //表示有多少个导航
+	for(var i = 0; i < iconLen; i++) {
+		icon[i].setAttribute("data-num", i);
+		pageview[i].setAttribute("data-num", i);
+/*		Array.prototype.slice.call(pageview[i].querySelectorAll("*")).forEach(function(ele) {
+			ele.setAttribute("data-num", i);
+		})*/
+	}
+
+//计算导航条要最终停留的那一页的前面几个导航的长度总和
+	function calPrevNavLon(len) {
+		var baseLon = 0;
+		for(var i = 0; i < len; i++) {
+			baseLon += icon[i].clientWidth;
+		}
+		return baseLon;
+	}
+	tarbar.style.width = calPrevNavLon(iconLen) + "px";
+
+	var bundLeft = 0;
+	var bundRight = 0;
+	var index = 0; //序列号标记
+	var startX = 0;
+	var startY = 0;
+	var initialPos = 0;
+	var translate = 0;//默认设置滑动前的初始位置为0
+	var iW=view().w;
+	var deltaX;
+	var touched = {};
+	var isMove = 0;
+	touched.initialPos = 0;//本次滑动前的初始位置
+	touched.moveLen = line.style.width = icon[0].clientWidth + "px";//页面刚加载时红线的长度
+	viewport.style.width = iW * iconLen + "px";//页面刚加载时viweport的长度
+
+	pageview.forEach(function(ele) {
+		ele.style.width = iW + "px";
+		ele.style.minHeight = view().h + "px"
+	});
+	bundLeft = icon.map(function(item,index) {
+		return parseFloat(item.getBoundingClientRect().left)
+	});
+	bundRight = icon.map(function(item,index) {
+		return parseFloat(item.getBoundingClientRect().right)
+	});
+	/*手指放在屏幕上*/
+	function start(e) {	
+		isMove = 0;
+		var touch = e.touches[0];
+		startX = touch.pageX;
+		startY = touch.pageY;
+		viewport.addEventListener("touchmove", move, false);
+		viewport.style.webkitTransition = ""; //取消动画效果
+
+	}
+	function move(e) {
+		var target = e.target;
+		parentsUntil(target, '.pageview');
+		//console.log(parentsUntil(target, '.pageview'))
+		touched.current = parentsUntil(target, '.pageview').getAttribute("data-num");
+		//console.log(touched.current,"****************")
+		touched.moveLen = line.style.width = icon[touched.current].clientWidth + "px";
+
+		//console.log(line.style.width);
+
+		if (e.touches.length > 1 || e.scale && e.scale !== 1) return;// 当屏幕有多个touch或者页面被缩放过，就不执行move操作
+
+		var touch = e.touches[0];
+
+		deltaX = touch.pageX - startX;    //获取x位置上的偏移
+
+		var deltaY = touch.pageY - startY;    //获取Y位置上的偏移
+		//console.log(deltaX, "- ---");
+		translate = touched.initialPos + deltaX; //当前需要移动到的位置
+		isMove++;
+		if(isMove == 1) {
+
+			if(Math.abs(deltaX) / Math.abs(deltaY) > 3) {//求滑动一开始的瞬间，水平滑动和垂直滑动的距离比，比例满足条件才会注册滑动事件的监听，否者就把滑动事件的监听取消掉
+				viewport.addEventListener("touchend", end, false);
+				viewport.addEventListener("touchstart", preventDefault, false);
+			} else {
+				viewport.removeEventListener("touchmove", move, false);
+				viewport.removeEventListener("touchend", end, false);
+				viewport.removeEventListener("touchstart", preventDefault, false);
+				return;
+			}
+
+		}
+		//如果X方向上的位移大于Y方向，则认为是左右滑动
+		if(Math.abs(deltaX) > Math.abs(deltaY)) {
+
+			if (translate < 0){ //表示向右滑动
+
+				if (Math.abs(translate) >= iW*(iconLen-1)){//表示向左滑动滑到边界了
+
+					line.style.transform = 'translate3d('+bundLeft[bundLeft.length-1]+'px,0,0)';//停留在红线最后的这个位置
+
+				}else {
+					//非边缘状态
+					line.style.transform = 'translate3d('+(parseInt(bundLeft[touched.current])-(deltaX/iW)*(iW/iconLen))+'px,0,0)';
+
+				}
+
+			} else if(translate >= 0) {//表示向右滑动滑到边界了
+
+				line.style.transform = 'translate3d(0,0,0)';//红线位置停留在0的这个位置
+
+			}
+			//console.log(translate,"=-=--=", touched.initialPos)
+			viewport.style.transform = 'translate3d('+(translate)+'px,0,0)';
+		}
+	}
+	function end (e){
+		viewport.style.webkitTransition = "0.3s ease -webkit-transform";
+
+		if(touched.current == iconLen - 1 && deltaX < 0) {
+			//表示向左滑动滑到边界了
+			viewport.style.transform = 'translate3d(-'+(parseInt(iconLen) - 1) * iW+'px,0,0)';
+
+		} else if(touched.current == 0 && deltaX > 0) {
+			//表示向右滑动滑到边界了
+			viewport.style.transform = 'translate3d(0px,0,0)';
+
+		} else {//计算最终需要停留在哪一页
+			if(deltaX > 10) {//手指向右滑动大于10
+
+				if(icon[(parseInt(touched.current)-1)].getBoundingClientRect().left < 0) {
+
+					tarbox.scrollLeft =tarbox.scrollLeft + (icon[(parseInt(touched.current)-1)].getBoundingClientRect().left);
+					console.log((icon[(parseInt(touched.current)-1)].getBoundingClientRect().left))
+				}
+				touched.initialPos=-(parseInt(touched.current) - 1)*iW;
+
+				viewport.style.transform = 'translate3d(-'+(-touched.initialPos)+'px,0,0)';
+
+				line.style.width = icon[parseInt(touched.current) - 1].clientWidth + "px";
+
+				line.style.transform = 'translate3d('+calPrevNavLon(parseInt(touched.current) - 1) +'px,0,0)';
+
+			} else if (deltaX < -10) {//手指向左滑动大于10
+
+				if(bundRight[(parseInt(touched.current) + 1)] > iW) {
+
+					tarbox.scrollLeft = tarbox.scrollLeft + (icon[(parseInt(touched.current)+1)].getBoundingClientRect().right-iW);
+				}
+
+				touched.initialPos=-(parseInt(touched.current) + 1)*iW;
+
+				viewport.style.transform = 'translate3d(-'+(-touched.initialPos)+'px,0,0)';
+
+				line.style.width = icon[parseInt(touched.current) + 1].clientWidth + "px";
+
+				line.style.transform = 'translate3d('+ calPrevNavLon(parseInt(touched.current) + 1)  +'px,0,0)';
+
+			}
+		}
+	}
+	function preventDefault(e) {
+		e.preventDefault();
+	}
+	viewport.addEventListener("touchstart", start, false);
+	//点击导航切换
+	document.addEventListener('click',function (e){
+		viewport.style.webkitTransition = "0.3s ease -webkit-transform";
+		var target = e.target;
+		touched.current = target.dataset.num;
+		touched.initialPos=-(parseInt(touched.current))*iW;
+		if(icon[touched.current].getBoundingClientRect().left < 0) {
+			tarbox.scrollLeft = tarbox.scrollLeft + (icon[(parseInt(touched.current))].getBoundingClientRect().left);
+		} else if (icon[touched.current].getBoundingClientRect().right > iW){
+			tarbox.scrollLeft = tarbox.scrollLeft + (icon[(parseInt(touched.current))].getBoundingClientRect().right-iW)
+		}
+
+		viewport.style.transform = 'translate3d(-'+(touched.current*iW)+'px,0,0)';
+
+		line.style.width = icon[parseInt(touched.current)].clientWidth + "px";
+
+		line.style.transform = 'translate3d('+ calPrevNavLon(parseInt(touched.current))  +'px,0,0)';
+
+	},false)
+}
+
+</script>
+
+</body>
+</html>
